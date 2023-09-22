@@ -6,9 +6,9 @@
     <title>Murakami Haruki's Books Read by Me</title>
     <style>
         body {
-            font: 100% Lucida Sans, Verdana;
-            margin: 3px;
-            line-height: 23px;
+            font-family: Arial;
+            background-color: #d14836;
+            line-height: 20px;
         }
         .container {
             xmin-width: 900px;
@@ -17,67 +17,76 @@
             position: relative;
             overflow: auto;
         }
-        #top, #sidebar, #bottom, .bookitem {
-            border-radius: 4px;
-            margin: 4px;
-        }
-
         #top {
-        background-color: #04AA6D;
         color: white;
         padding:15px;
+        font-size: 18px;
+        line-height: 26px;
+        }
+
+        #top h1{
+            margin:0;
+            line-height: 50px;
         }
 
         #menubar{
-            width: 200px;
-            float: left;
+            width: 190px;
+            float: right;
+            margin-bottom: 100px;
         }
 
         #main{
             padding: 10px;
-            margin: 0 210px;
+            background-color: white;
+            font: 80% Verdana;
         }
 
+        #main h1, #main h2{
+            color: #d14836;
+        }
         #sidebar {
-            background-color: #32a4e7;
-            color: white;
+            background-color: #F6DAD7;
+            color: #d14836;
             padding: 10px;
-            width: 180px;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            position: absolute;
         }
 
         #bottom{
-            border: 1 px soild #d4d4d4;
-            background-color: #f1f1f1;
             text-align: center;
             padding: 10px;
             font-size: 70%;
-            line-height: 14px;
+            color: white;
         }
-        #top h1, #top p, #booklist {
-            margin: 0;
+        #booklist {
             padding: 0;
+            font: 15px verdana;
         }
         .bookitem{
-            background-color: #f1f1f1;
-            border: 1px dolid #d4c4d4;
+            width: 155px;
+            background-color: #d14836;
+            border: 1px solid #d14836;
+            border-radius: 40px;
+            color: white;
             list-style-type: none;
-            padding: 2px;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
             cursor: pointer;
         }
+        
         .bookitem:hover{
             background-color: white;
+            color: #d14836;
         }
-        .bookitem:first-child{
-            background-color: #04AA6D;
-            color: white;
+        .bookitem:nth-child(2){
+            background-color: white;
+            color: #d14836;
             font-weight:bold;
         }
         a{
-            color: #000000;
+            color: #d14836;
+            text-decoration: none;
+        }
+        a:hover {
             text-decoration: underline;
         }
         @media (max-width: 800px){
@@ -108,23 +117,19 @@
         </div>
         <div class = "wrapper">
             <div id = "menubar">
-                <ul id = "bookslits">
+                <ul id = "booklist">
                     <li class="bookitem">1Q84</li>
                     <li class="bookitem">세계의 끝과 하드보일드 원더랜드</li>
                     <li class="bookitem">노르쉐이의 숲</li>
                     <li class="bookitem">국경의 남쪽, 태양의 서쪽</li>
                     <li class="bookitem">스푸트니크의 연인</li>
-                    <li class="bookitem">해변의 카프카</li>
-                    <li class="bookitem">4월의 어느 맑은 아침에 100퍼센트 여자를 만나는 것에 대하여</li>
-                    <li class="bookitem">색체가 없는 다자키 쓰쿠루와 그가 순례를 떠난 해</li>
-                    <li class="bookitem">도시와 그 불확실한 벽</li>
                 </ul>
             </div>
             <div id = "main">
                 <h1>Murakimi Haruki</h1>
                 <p>1942년생 1월 12에 탄생한 일본의 소설가이자 번역가이다. 작품 대부분이 50개 이상의 언어로 번역되었고, 일본뿐만 아니라 세계적으로 몇 백만 부 이상의 판매고를 올린 국제적인 베스트셀러 작가다. 1979년 중편 《바람의 노래를 들어라》로 데뷔했고, 이 작품으로 군조 신인상을 수상했다. 이후, 전업 작가로 활동하며 여러 편의 장편 소설, 단편집, 수필, 논픽션 작품을 발표하며 대중적 인기와 평단의 호평을 얻었다. 요미우리 문학상(1996), 프란츠 카프카 상(2006), 세계환상문학대상(2006), 예루살렘 상(2009) 등을 많은 문학상을 수상했다.</p>
-                <h2>1Q84</h2>
-                <p>무라카미 하루키가 어둠의 저편 이후 5년 만에 펴낸 장편소설『1Q84』제1권. 해마다 노벨상 후보에 거론되며, 일본은 물론 세계적으로 많은 사랑을 받고 있는 작가 무라카미 하루키. 그가 이번에는 두 남녀의 아련한 첫사랑 이야기인 동시에 '1Q84'를 헤쳐나가며 겪게 되는 환상적인 이야기를 그렸다. 압도적인 이야기의 강렬함과 흡인력이 돋보인다.</p>
+                <h2>세계의 끝과 하드보일드 원더랜드</h2>
+                <p>1985년 하루키 월드의 시작을 세계에 알렸던 작품, 하루키의 네 번째 장편 소설 『세계의 끝과 하드보일드 원더랜드』가 출간 35주년을 기념하여 1, 2권을 한데 묶은 합본 한정판으로 선보인다. 스타일리시하며 냉소적인 세계, ‘하드보일드 원더랜드’와 환상적이고 서정적인 ‘세계의 끝’이라는 판이한 두 무대가 서로 대비되고 때로는 호응하며 평행으로 이어지다 도저히 상상하지 못한 전개를 펼쳐 보인 이 작품은 일본뿐 아니라 전 세계 독자들을 사로잡아 제21회 다니자키 준이치로 상을 수상하며 일본 내에서도 162만 부 이상이 판매되며 1980년대의 기념비적 작품이 되었다.</p>
             </div>
             <div id = "sidebar">
                 <h3>달리기를 말할 때 내가 하고 싶은 이야기</h3>
@@ -135,7 +140,7 @@
             </div>
         </div>
         <div id = "bottom">
-            작가의 한마디
+            작가의 한마디:
         그저 묵묵히 시간을 들여 거리를 뛰어간다. 빨리 달리고 싶다고 느껴지면 나름대로 스피드도 올리지만, 설령 속도를 올린다고 해도 그 달리는 시간을 짧게 해서 몸이 기분 좋은 상태 그대로 내일까지 유지되도록 힘쓴다. 장편소설을 쓰고 있을 때와 똑같은 요령이다. 더 쓸만하다고 생각될 때 과감하게 펜을 놓는다. 그렇게 하면 다음 날 집필을 시작할 때 편해진다. 어니스트 허밍웨이도 아마 비슷한 이야기를 썼던 것으로 기억하고 있다. 계속하는 것- 리듬을 단절하지 않는 것. 장기적인 작업을 하는 데에는 그것이 중요하다.
         </div>
     </div>
