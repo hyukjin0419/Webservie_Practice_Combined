@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Text Input Fields</h2>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+    </form>
+
+    <h2>Radio Buttons</h2>
+    <p>Choose your favorite Computer Language</p>
+    <form>
+        <input type = "radio" id="Java" name="fav_language" value="Java">
+        <label for="Java">Java</label><br>
+        <input type = "radio" id="Python" name="fav_language" value="Python">
+        <label for="Java">Python</label><br>
+        <input type = "radio" id="C" name="fav_language" value="C">
+        <label for="Java">C</label><br>
+    </form>
+
+    <h2>Checkboxes</h2>
+    <p>Check if you have learned the class</p>
+    <form>
+        <input type="checkbox" id="C Programming Language" name = "C Programming Language" value = "freshman">
+        <label for="C Programming Language">C Programming Language</label><br>
+        <input type="checkbox" id="Java Programming Language" name = "Java Programming Language" value = "sophomore">
+        <label for="Java Programming Language">Java Programming Language</label><br>
+        <input type="checkbox" id="Data Structure" name = "Data Structure" value = "sophmore">
+        <label for="Data Structure">Data Structure</label><br>
+
+    </from>
+
+    <h2>Select & OPTgroup</h2>
+    
+    <form>
+        <label for="city">Where do you live?</label>
+        <select name="city" id = "city">
+            <optgroup label="Large">
+                <option value="서울">서울</option>
+                <option value="부산">부산</option>
+            </optgroup>
+            <optgroup label="Small">
+                <option value="포항">포항</option>
+                <option value="대구">대구</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Data</h2>
+    <form>
+        <p>오늘의 최고 기온은 <data value="28">28</data>도, 최저 기온은 <data value="18">18</data>도입니다.</p>
+    </form>
+
+
+    <h2>Text Area</h2>
+    <from>
+        <p><label for="w3review">Review of W3Schools:</label></p>
+        <textarea id="w3review" name="w3review" row="10" cols="80">Type here</textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </from>
+
+    <h2>Fieldset & legend</h2>
+
+    <from>
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </from>
+
+    <h2>Data List</h2>
+    <form>
+        <label for="class">Choose your favoriate class from the list:</label>
+        <input list="classes" name="class" id="class">
+        <datalist id =classes>
+            <option value="C Programming Language"></option>
+            <option value="Java Programming Language"></option>
+            <option value="Data Structure"></option>
+            <option value="Open Source Software"></option>
+        </datalist>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
